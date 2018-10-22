@@ -19,7 +19,9 @@
     "babel-loader": "^8.0.4",
     "commitizen": "^3.0.4",
     "cz-conventional-changelog": "^2.1.0",
-    "nodemon": "^1.18.4"
+    "nodemon": "^1.18.4",
+    "webpack": "^4.22.0",
+    "webpack-dev-middleware": "^3.4.0"
   },
   "config": {
     "commitizen": {
