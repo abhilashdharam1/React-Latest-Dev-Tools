@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "commit": "npx git-cz",
-    "test": "jest --watchAll",
+    "test": "jest",
     "server": "nodemon --watch server --exec babel-node -- server/index.js"
   },
   "keywords": [],
