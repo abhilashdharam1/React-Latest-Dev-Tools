@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "commit": "npx git-cz",
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest --watchAll",
     "server": "nodemon --watch server --exec babel-node -- server/index.js"
   },
   "keywords": [],
@@ -16,9 +16,14 @@
     "@babel/node": "^7.0.0-beta.52",
     "@babel/preset-env": "^7.0.0-beta.52",
     "@babel/preset-react": "^7.0.0",
+    "babel-core": "^7.0.0-bridge.0",
     "babel-loader": "^8.0.4",
     "commitizen": "^3.0.4",
     "cz-conventional-changelog": "^2.1.0",
+    "enzyme": "^3.7.0",
+    "enzyme-adapter-react-16": "^1.6.0",
+    "ghooks": "^2.0.4",
+    "jest": "^23.6.0",
     "nodemon": "^1.18.4",
     "webpack": "^4.22.0",
     "webpack-dev-middleware": "^3.4.0"
@@ -26,6 +31,9 @@
   "config": {
     "commitizen": {
       "path": "node_modules/cz-conventional-changelog"
+    },
+    "ghooks": {
+      "pre-commit": "npm run test"
     }
   },
   "dependencies": {
