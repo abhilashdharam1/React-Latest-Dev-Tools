@@ -10,7 +10,7 @@
     "server": "nodemon --watch server --exec babel-node -- server/index.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "Abhilash Dharam",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.0.0-beta.52",
